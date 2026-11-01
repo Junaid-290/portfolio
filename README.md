@@ -65,8 +65,7 @@ Then open http://localhost:8000. Alternatively, open the folder in VS Code and u
 
 It is a static site, so any static host works.
 
-- **GitHub Pages:** Settings → Pages → Deploy from branch → `main` / `(root)`
-- **Netlify or Vercel:** import the repo; no build command and no output directory needed
+- **GitHub Deployed: https://junaid-290.github.io/portfolio/** 
 
 ## Contact
 
