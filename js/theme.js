@@ -1,20 +1,20 @@
-const ORDER = ['midnight', 'porcelain', 'arctic', 'sunset'];
-const ICONS = { midnight: '\uD83C\uDF19', porcelain: '\uD83C\uDF38', arctic: '\u2744\uFE0F', sunset: '\uD83C\uDF07' };
-const NAMES = { midnight: 'Midnight Rose', porcelain: 'Porcelain Light', arctic: 'Arctic Blue', sunset: 'Sunset Ember' };
-const KEY = 'fj-theme';
+const ORDER = ['seamist', 'deepsea', 'predawn', 'dawnbreak'];
+const ICONS = {  seamist: '\uD83C\uDF2B\uFE0F', deepsea: '\uD83C\uDF0A', predawn: '\uD83C\uDF05', dawnbreak: '\u2600\uFE0F' };
+const NAMES = { seamist: 'Sea Mist', deepsea: 'Deep Sea', predawn: 'Predawn', dawnbreak: 'Dawn Break' };
+const KEY = 'ja-theme';
 
 export function initTheme(){
   const btn = document.getElementById('themeBtn');
   const apply = t => {
-    if (t === 'midnight') document.body.removeAttribute('data-theme');
+    if (t === 'predawn') document.body.removeAttribute('data-theme');
     else document.body.dataset.theme = t;
     btn.textContent = ICONS[t];
     btn.title = NAMES[t] + ' - click to change';
     try { localStorage.setItem(KEY, t); } catch (e) {}
   };
-  let cur = 'midnight';
-  try { cur = localStorage.getItem(KEY) || 'midnight'; } catch (e) {}
-  if (!ORDER.includes(cur)) cur = 'midnight';
+  let cur = 'predawn';
+  try { cur = localStorage.getItem(KEY) || 'predawn'; } catch (e) {}
+  if (!ORDER.includes(cur)) cur = 'predawn';
   apply(cur);
   btn.addEventListener('click', () => { cur = ORDER[(ORDER.indexOf(cur) + 1) % ORDER.length]; apply(cur); });
 }

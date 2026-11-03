@@ -1,15 +1,15 @@
 /* Shared: buttons, tags, theme toggle */
 .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 30px;border-radius:12px;font-weight:600;font-size:.95rem;text-decoration:none;cursor:pointer;border:none;font-family:var(--fb);transition:.28s}
-.btn-primary{background:var(--accent);color:#fff;box-shadow:0 10px 30px rgba(242,85,143,.35);position:relative;overflow:hidden}
-.btn-primary:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(242,85,143,.5)}
+.btn-primary{background:var(--accent);color:var(--on-accent);box-shadow:0 10px 30px color-mix(in srgb,var(--accent) 35%,transparent);position:relative;overflow:hidden}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 16px 40px color-mix(in srgb,var(--accent) 50%,transparent)}
 .btn-primary::after,.btn-download::after{content:"";position:absolute;top:0;left:-80%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.4),transparent);transform:skewX(-20deg);transition:left .65s}
 .btn-primary:hover::after,.btn-download:hover::after{left:135%}
 .btn-secondary{background:transparent;color:var(--accent-light);border:1.5px solid var(--accent-light)}
 .btn-secondary:hover{transform:translateY(-3px);background:var(--accent-soft)}
 .project-tags,.exp-tags,.skill-tags{display:flex;flex-wrap:wrap;gap:8px}
 .skill-tags{gap:9px}
-.project-tags span,.exp-tags span{font-size:.78rem;padding:6px 14px;border-radius:100px;background:#2e2230;color:var(--accent-light)}
+.project-tags span,.exp-tags span{font-size:.78rem;padding:6px 14px;border-radius:100px;background:var(--tag-bg);color:var(--tag-fg)}
 .project-tags{margin-bottom:22px}
 .theme-btn{background:var(--card);border:1px solid var(--card-border);color:var(--text);width:42px;height:42px;border-radius:50%;font-size:1.15rem;cursor:pointer;transition:.3s;display:flex;align-items:center;justify-content:center;flex:none;padding:0}
 .theme-btn:hover{transform:rotate(18deg) scale(1.1);border-color:var(--accent)}
-.fyp-badge{display:inline-block;align-self:flex-start;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:rgba(242,85,143,.12);color:var(--accent-light);border:1px solid rgba(242,85,143,.35);padding:5px 12px;border-radius:999px;margin-bottom:12px}
+.fyp-badge{display:inline-block;align-self:flex-start;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--accent-light);border:1px solid color-mix(in srgb,var(--accent) 35%,transparent);padding:5px 12px;border-radius:999px;margin-bottom:12px}

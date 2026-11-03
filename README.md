@@ -4,7 +4,7 @@ Personal portfolio of **Muhammad Junaid Akbar**, a Full-Stack Developer (React, 
 
 ## Features
 
-- Four switchable themes: Midnight Rose, Porcelain Light, Arctic Blue and Sunset Ember (the choice is remembered)
+- Four switchable themes: Sea Mist, Deep Sea, Pre-Dawn and Dawn Break (the choice is remembered)
 - Animated hero with typewriter text, animated stat counters and scroll-reveal sections
 - Filterable project grid (All / Full-Stack / Frontend)
 - Built-in resume preview with one-click **Download PDF** (print stylesheet exports only the resume)
