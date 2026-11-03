@@ -1,7 +1,7 @@
 /* "Download PDF" prints only the resume preview */
 @media print{
   @page{size:A4;margin:11mm}
-  .navbar,footer,#progress,#loader,.blob,#toTop,main>section:not(#resume),#resume .section-kicker,#resume .section-title,#resume .section-sub,#resume .resume-summary,#resume .resume-preview-bar,#resume .dl-card{display:none!important}
+  body::after,.navbar,footer,#progress,#loader,.blob,#toTop,main>section:not(#resume),#resume .section-kicker,#resume .section-title,#resume .section-sub,#resume .resume-summary,#resume .resume-preview-bar,#resume .dl-card{display:none!important}
   body{background:#fff!important}
   #resume{padding:0!important;max-width:100%!important}
   .resume-preview-wrap{border:none!important;margin:0!important;box-shadow:none!important}
